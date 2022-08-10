@@ -26,16 +26,14 @@ const runBattles = (battles: Battle[]) => {
   });
 };
 
-export default {
+export default runBattles;
+
+export {
   player1,
   player2,
   player3,
   monster1,
   monster2,
-  runBattles,
-};
-
-export {
   pvp,
   pve,
 };
