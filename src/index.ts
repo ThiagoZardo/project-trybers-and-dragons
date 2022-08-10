@@ -4,36 +4,24 @@ import Dragon from './Dragon';
 import Monster from './Monster';
 
 // players
-const player1 = new Character('player1');
+export const player1 = new Character('player1');
 for (let i = 0; i < 3; i += 1) player1.levelUp();
-const player2 = new Character('player2');
-const player3 = new Character('player3');
+export const player2 = new Character('player2');
+export const player3 = new Character('player3');
 
 // monsters
-const monster1 = new Monster();
-const monster2 = new Dragon();
+export const monster1 = new Monster();
+export const monster2 = new Dragon();
 
 // PVP
-const pvp = new PVP(player2, player3);
+export const pvp = new PVP(player2, player3);
 
 // PVE
-const pve = new PVE(player1, [monster1, monster2]);
+export const pve = new PVE(player1, [monster1, monster2]);
 
 // runBattles
-const runBattles = (battles: Battle[]) => {
+export const runBattles = (battles: Battle[]) => {
   battles.forEach((battle) => {
     battle.fight();
   });
-};
-
-export default runBattles;
-
-export {
-  player1,
-  player2,
-  player3,
-  monster1,
-  monster2,
-  pvp,
-  pve,
 };
