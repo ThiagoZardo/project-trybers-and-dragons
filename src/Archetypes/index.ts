@@ -4,8 +4,8 @@ import Warrior from './Warrior';
 import Ranger from './Ranger';
 import Necromancer from './Necromancer';
 
-export default Archetype;
-export {
+export default Archetype; // normal
+export { // com {}
   Mage,
   Warrior,
   Ranger,
